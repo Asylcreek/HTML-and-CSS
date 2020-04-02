@@ -1,0 +1,372 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+	background-color: blue;
+	color: white;
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+	margin: 1.5625rem;
+	margin-top: 10px;
+}
+
+.header{
+	/*background-color: darkred;*/
+	border: 0px solid;
+	border-color: red;
+	border-radius: 5px;
+	/*font-size: 40px;*/
+	height: 80px;
+	padding: 10px;	
+	position: relative;
+	text-align: center;
+	/*width: 800px;*/
+
+}
+
+#nickname{
+	color: white;
+	display: inline-block;
+	font-family: 'Sacramento', cursive;
+	font-size: 0.875rem;
+	margin-left: 1.5625rem;
+	margin-top: 15px;
+	position: absolute;
+	left: 4%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+#header-nav{
+	color: white;
+	display: inline-block;
+	margin-right: 1.5625rem;
+	margin-top: 15px;
+	position: absolute;
+	right: 6%;
+	top: 50%;
+	transform: translate(28%, -50%);
+}
+
+#header-nav #a-home{
+	margin-right: 10px;
+}
+
+#header-nav #a-about{
+	margin-right: 10px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	
+}
+
+.brief-intro{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.25rem;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+
+.brief-intro h3{
+	position: relative;
+	top: 100px;
+}
+.brief-intro p{
+	margin: 9.375rem auto;
+	max-width: 100%;
+	width: 650px;
+}
+
+#first{
+	display: inline-block;
+	float: left;
+	width: 22%;
+}
+
+#second{
+	display: inline-block;
+	float: right;
+	width: 22%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+    /*background-color: #ffd223;*/
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 1.25em 1.5625em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.0625em;
+    font-weight: bold;
+    margin: 2px auto;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    position: relative;
+}
+
+#buttons-container{
+	text-align: center;
+}
+
+#buttons{
+    margin: 10px auto;
+    max-width: 95%;
+    width: 650px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color: #ffd223;*/
+    background-color: black;
+    border-radius: 25px;
+}
+
+.button:hover{
+	outline: none;
+	/*background-color: red;*/
+}
+
+.button:active{
+	outline: none;
+}
+
+.button:focus{
+	outline: none;
+}
+
+.active{
+	outline: none;
+	background-color: red;
+}
+
+#about-text-container{
+	position: relative;
+	text-align: center;
+	height: 350px;
+	width: 100%;
+	z-index: -1;
+}
+
+.about-text{
+	margin-top: 20px;
+	max-width: 75%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+}
+
+#why-me-container{
+	display: flex;
+	max-width: 100%;
+	width: 100%;
+}
+
+#why-me-container ol{
+	padding: 0;
+	line-height: 2;
+	list-style-type: none; 
+}
+
+#why{
+	display: flex;
+	flex: 50%;
+	font-size: 2rem;
+	line-height: 150px;
+	margin: 0 100px;
+	padding: 20px;
+	text-align: center;
+}
+
+#list{
+	display: flex;
+	flex: 50%;
+	padding: 0 50px;
+}
+
+.footer{
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.footer ol{
+	padding: 0;
+	list-style-type: none; 
+}
+
+#slogan{
+	display: inline-block;
+	font-family: 'Sacramento', cursive;
+	font-size: 35px;
+	margin: 5px auto;
+}
+
+.footer img{
+	margin: 0 15px;
+	height: 40px;
+	width: 40px;
+}
+
+#last-line{
+	margin-top: 50px;
+}
+
+#contact-me-form{
+	text-align: center;
+}
+
+#form-container{
+	margin: 50px auto;
+	height: 400px;
+	width: 600px;
+}
+
+.label{
+	margin-left: -265px;
+}
+
+input[type=text]{
+	margin: 10px auto;
+}
+
+form span{
+	color: red;
+}
+
+
+/*Media Queries*/
+@media all and (max-width: 599px) and (min-width: 320px) {
+    body{
+        font-size: 12px;
+    }
+ 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	body{
+        font-size: 12px;
+    }
+
+    #first, #second{
+    	visibility: hidden;
+    }
+
+    #footer-nav img{
+    	margin-bottom: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	body{
+        font-size: 14px;
+    }
+
+    #first, #second{
+    	visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+	#why-me-container{
+		display: block;
+		text-align: center;
+	}
+
+	#why{
+		display: block;
+		margin: -50px 0;
+		line-height: 2;
+	}
+
+	#list{
+		display: block;
+		padding-bottom: 10px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	body{
+        font-size: 15px;
+    }
+	
+	#buttons{
+		width: 650px;
+	}
+	
+    #first, #second{
+    	visibility: hidden;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	body{
+        font-size: 15px;
+    }
+	
+	#buttons{
+		width: 650px;
+	}
+
+    #first, #second{
+    	visibility: visible;
+    	width: 15%
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	body{
+        font-size: 18px;
+    }
+
+    #buttons{
+    	width: 780px;
+    }
+
+    #first, #second{
+    	visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+	#first, #second{
+    	visibility: visible;
+    	width: 20%;
+    }
+	
+	#why{
+		line-height: 200px;
+		margin-left: 100px;
+		padding-left: 200px;
+	}
+}
+
+@media only screen and (min-width: 2500px) {
+	#first, #second{
+    	visibility: visible;
+    	width: 33%;
+    }
+
+    #why{
+		padding-left: 30%;
+	}
+}

@@ -1,0 +1,102 @@
+body {
+    background-color: #12161D;
+    color: #fff;
+    max-width: 100%;
+    padding: 1.3%;
+    font-size: 10px;
+}
+
+a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.navbar {
+    padding: 0.5rem 0 2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.5rem;
+    /* margin: 0 15px; */
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    padding-left: 30px;
+}
+
+.lookbook-nav {
+    margin-right: 90px;
+}
+
+.contact-nav {
+    margin-right: 16.875rem;
+}
+
+.lang-nav {
+    margin-right: 40px;
+}
+
+.login-nav {
+    margin-right: 80px;
+}
+
+.suit-image {
+    position: absolute;
+    width: 679px;
+    height: 1014px;
+    top: 131px;
+    left: 0;
+    z-index: 0;
+    /* max-width: 100%; */
+}
+
+.text-heading {
+    position: relative;
+    margin-top: 350px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 2;
+    color: #FFFBFB;
+    margin-left: 50px;
+}
+
+.text-content {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 130%;
+    color: #ADAAAA;
+    width: 450px;
+    margin-left: 50px;
+}
+
+.trouser-image {
+    background: linear-gradient(0deg, rgba(78, 62, 39, 0.14), rgba(78, 62, 39, 0.14));
+    position: absolute;
+    top: 470px;
+    right: 0;
+    height: 685.1px;
+    z-index: -1;
+    /* max-width: 100%; */
+}
+
+.socials-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-button {
+    position: relative;
+    padding: 70px 0;
+}
+
+.social-button a {
+    position: absolute;
+    right: 260px;
+}
